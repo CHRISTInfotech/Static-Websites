@@ -1,0 +1,60 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore three independent storefront website demos: fragrance, aquariums, and trophies.">
+  <title>Website Demos</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #18212f; background: #f4f6fa; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; }
+    main { width: min(1080px, calc(100% - 40px)); margin: 0 auto; padding: 72px 0; }
+    .intro { max-width: 650px; margin-bottom: 36px; }
+    .eyebrow { margin: 0 0 12px; color: #52637b; font-size: .78rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+    h1 { margin: 0; font-size: clamp(2.3rem, 6vw, 4rem); line-height: 1.05; letter-spacing: -.045em; }
+    .intro p:last-child { margin: 16px 0 0; color: #526074; font-size: 1.08rem; line-height: 1.65; }
+    .demos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+    .card { display: flex; min-height: 245px; flex-direction: column; align-items: flex-start; padding: 26px; border: 1px solid #e1e6ef; border-radius: 18px; background: #fff; box-shadow: 0 10px 30px rgb(24 33 47 / 5%); }
+    .number { color: #687991; font-size: .8rem; font-weight: 700; letter-spacing: .12em; }
+    h2 { margin: 22px 0 8px; font-size: 1.45rem; }
+    .card p { margin: 0 0 24px; color: #5d6a7d; line-height: 1.55; }
+    .card a { margin-top: auto; color: #fff; background: #243c63; border-radius: 9px; padding: 11px 15px; font-weight: 650; text-decoration: none; }
+    .card a:hover, .card a:focus-visible { background: #152847; }
+    .card a:focus-visible { outline: 3px solid #8eb6ff; outline-offset: 3px; }
+    footer { margin-top: 42px; color: #758196; font-size: .9rem; }
+    @media (max-width: 760px) { main { padding: 48px 0; } .demos { grid-template-columns: 1fr; } .card { min-height: 210px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="intro">
+      <p class="eyebrow">Website collection</p>
+      <h1>Explore the demos</h1>
+      <p>Choose a storefront to preview. Each demo opens as its own independent website.</p>
+    </header>
+
+    <section class="demos" aria-label="Website demos">
+      <article class="card">
+        <span class="number">01 / FRAGRANCE</span>
+        <h2>AuraMist</h2>
+        <p>Browse body sprays and fragrance mists, explore categories, and find products.</p>
+        <a href="Spray_Website/">Open AuraMist <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="card">
+        <span class="number">02 / AQUARIUM</span>
+        <h2>AquaWorld</h2>
+        <p>Explore aquarium fish, aquatic plants, and essentials for an underwater habitat.</p>
+        <a href="Fish_Website/Fish_Aquarium/">Open AquaWorld <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="card">
+        <span class="number">03 / AWARDS</span>
+        <h2>Crown &amp; Craft</h2>
+        <p>View trophies, awards, and gifts, with additional about and contact pages.</p>
+        <a href="Trophy_Website/Trophy/">Open Crown &amp; Craft <span aria-hidden="true">→</span></a>
+      </article>
+    </section>
+    <footer>Three demos · One collection</footer>
+  </main>
+</body>
+</html>
